@@ -19,3 +19,5 @@
   31999 0xf3412014
 */
 unsigned int get_money(unsigned short int);
+
+//max money 40290
