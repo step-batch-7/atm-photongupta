@@ -13,7 +13,7 @@ unsigned int get_money(unsigned short int money)
   for (int i = 0; i < 8; i++)
   {
     no_of_notes = no_of_notes << 4;
-    no_of_notes += remaining_amount / denominations[i];
+    no_of_notes |= remaining_amount / denominations[i];
     remaining_amount = remaining_amount % denominations[i];
   }
   return no_of_notes;
